@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     const consultaAPI = async () => {
-      const { data } = await axios.get("/api/hi", {
+      const { data } = await axios.get("/v1/api/hi", {
         "Content-Type": "application/json",
       });
       setData(data);
